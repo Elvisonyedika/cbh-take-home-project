@@ -18,13 +18,15 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ## Your Breakdown Here
 
 **Ticket One**
-Accommodate for facility agent custom id in shift creation module
+Accommodate for facility agent custom id
 - Create an EAV (Entity Attribute Value) relationship for the facility and agent.
 - The EAV table (FacilitiesAgents) will have the following columns; id, facility_id, agent_id, facility_agent_id
 *Scope*
 - Backend
 *Assumption*
 - ORM is used. Thus `getShiftsByFacility` will henceforth return the newly added facility_agent_id
+*Estimated time
+- 5 hours (This accommates for all assumptions and posible variances)
 *Acceptance Criteria*
 - Migration of facility_agent_id can happen
 - `getShiftsByFacility` returns facility_agent_id for any migrated data
@@ -35,17 +37,33 @@ Accommodate for facility agent custom id in shift creation module
 - Extend the shift creation/edit module to accommodate for facility_agent_id
 *Scope*
 - Frontend and backend
+*Estimated time
+- 48 hours (This accommates for all assumptions and posible variances)
 *Acceptance Criteria*
 When creating a shift;
 - facility_agent_id is available for an agent who alread have
 - facility_agent_id can be added for an agent who dosent have at that time
+- `getShiftsByFacility` returns facility_agent_id for the shift
 
 
 **Tickect Three**
 - Subtitute facility_agent_id instead for agent_id in the `generateReport`
 *Scope*
 - Backend
+*Estimated time
+- 5 hours (This accommates for all assumptions and posible variances)
 *Assumption*
 - `generateReport` funtion takes in agent_id as a paramater or by injection
 *Acceptance Criteria*
 - Reports now have the custom facility_agent_id instead of agent_id
+
+
+**Ticket Four**
+Documentation of changes
+*Acceptance Criteria*
+- A proper documentation of the business request and the changes is done using conflunce or any available tool
+
+
+**General Assumption(s)**
+- Engineers working on these tickects are familiar with the project structure.
+- Proper documentation of the project exist
