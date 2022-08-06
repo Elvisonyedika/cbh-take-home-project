@@ -32,7 +32,6 @@ Accommodate for facility agent custom id
 - `getShiftsByFacility` returns facility_agent_id for any migrated data
 
 
-
 **Ticket Two**
 - Extend the shift creation/edit module to accommodate for facility_agent_id
 *Scope*
