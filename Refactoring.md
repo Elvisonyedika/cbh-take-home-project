@@ -10,5 +10,5 @@ You will be graded on the exhaustiveness and quality of your unit tests, the dep
 
 ## Your Explanation Here
 
-I decided to break the function into multiple units of single responsibility, which makes it readable and easy to understand
+I decided to break the function into multiple units of single responsibility, which shortens the function, makes it readable and easy to understand
 
