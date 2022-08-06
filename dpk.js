@@ -46,8 +46,10 @@ function createCandidateFromEvent(event){
 function formatCandidate(candidate) {
   const MAX_PARTITION_KEY_LENGTH = 256;
   const TRIVIAL_PARTITION_KEY = "0";
-  if (candidate.length > MAX_PARTITION_KEY_LENGTH) {
-    candidate = crypto.createHash("sha3-512").update(candidate).digest("hex");
+  if(candidate){
+    if (candidate.length > MAX_PARTITION_KEY_LENGTH) {
+      candidate = crypto.createHash("sha3-512").update(candidate).digest("hex");
+    }
   }
   return candidate ? candidate : TRIVIAL_PARTITION_KEY;
 }
